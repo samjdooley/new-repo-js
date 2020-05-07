@@ -1,0 +1,34 @@
+<script> 
+    function computerPlay () {
+        // random rock paper or scissors
+     var options = ['rock', 'paper', 'scissors'];
+     var computerSelection = options[Math.floor(Math.random()*options.length)];
+     return computerSelection;
+    };
+
+const computerSelection = computerPlay();
+
+    function playRound (playerSelection, computerSelection) {
+        var playerChoice = playerSelection.toLowerCase();
+        if (playerChoice === computerSelection) {
+            return "That's a tie. Play again"
+        } if (playerSelection === 'rock') {
+            if (computerSelection === 'paper') {
+                'You Lose! Paper beats Rock '
+            } else { 'You Win! Rock beats Scissors.'     
+            } 
+        if (playerSelection === 'scissors') {
+                if (computerSelection === 'paper')  {
+                    'You Win! Scissors beats Paper.'
+                } else { 'You Lose! Rock beats Scissors.'}
+                if (playerSelection === 'scissors') {
+        if (computerSelection === 'paper')  {
+            'You Win! Paper beats Rock.'
+            } else { 'You Lose! Scissors beats Paper.'}   
+        } 
+     } 
+    }
+    }
+console.log(playRound(playerSelection, computerSelection))
+
+</script>
